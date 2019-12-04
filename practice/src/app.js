@@ -1,13 +1,13 @@
 import React from 'react';
-
-import Counter from './components/counter/counter.js';
+import Count from './components/counter/counter';
+import SettingContext from './components/counter/counter-context';
 
 export default class App extends React.Component {
   render() {
     return (
-      <>
-        <Counter />
-      </>
+      <SettingContext>
+        <Count />
+      </SettingContext>
     );
   }
 }
